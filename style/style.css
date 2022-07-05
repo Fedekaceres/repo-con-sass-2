@@ -31,11 +31,10 @@
   display: flex;
 }
 .naV-Pyrmid .lI-Nav {
-  color: orange;
   list-style: none;
 }
 .naV-Pyrmid .A-Nav-destopk {
-  color: orange;
+  color: #ffa500;
   text-decoration: none;
 }
 .naV-Pyrmid .A-Nav-destopk:hover {
@@ -46,27 +45,30 @@
   color: linear-gradient(to right, #ff5858, #f857a6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.asidE-Ul {
+.asidE-Nav {
+  display: inline;
+}
+.asidE-Nav .asidE-Ul {
   border-radius: 0rem 1rem 1rem 0rem;
   background: #16222A; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #3A6073, #16222A); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-decoration: none;
-  margin-top: 1rem;
+  margin-top: 3rem;
   margin-left: 1rem;
   padding-right: 3rem;
   display: inline-flex;
   flex-direction: column;
 }
-.asidE-Ul .li-aside {
+.asidE-Nav .asidE-Ul .li-aside {
   list-style: none;
   padding: 0rem 0rem 0rem 0rem;
-  margin: 1rem 2rem 2rem 0rem;
+  margin: 2rem 2rem 2rem 0rem;
 }
-.asidE-Ul .A-Aside {
+.asidE-Nav .asidE-Ul .A-Aside {
   padding-left: 1rem;
   text-decoration: none;
-  color: orange;
+  color: #ffa500;
 }
 
 .card {
@@ -76,7 +78,7 @@
   cursor: pointer;
   margin-left: 1rem;
   margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-top: 8rem;
   width: 20rem;
 }
 .card:hover {
@@ -98,13 +100,16 @@
   }
 }
 @media (max-width: 768px) {
+  .videO-Pixels {
+    display: none;
+  }
   .headeR-Pyramid {
     display: none;
   }
   .naV-Pyrmid {
     display: none;
   }
-  .asidE-Ul {
+  .asidE-Nav {
     display: none;
   }
   .navbar {
@@ -122,7 +127,7 @@
     margin-top: 5rem;
   }
   .dropdown {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 }
 

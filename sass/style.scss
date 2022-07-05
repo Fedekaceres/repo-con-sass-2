@@ -1,14 +1,13 @@
 @import'header';
+@import 'maps';
+@import 'mixins';
 
 @import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Smooch&display=swap');
 *{font-family: 'Iceberg', cursive;
               }
    
   .fondO-Color {
-    background-repeat: repeat;
-    background: #000046;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          @include gradients_fondo;
          }            
 
     // nav y aside destokp
@@ -19,34 +18,33 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
         display: flex;
 
 
-              .lI-Nav{
-            color: orange;
+         .lI-Nav{
             list-style: none;
              }
 
-        .A-Nav-destopk{
-            color: orange;
+         .A-Nav-destopk{
+            color: map-get($colores, $key:color-btn);
             text-decoration: none;
             &:hover{
-                transition: 1s;
-          font-size: 1.2rem;
-            color: #f857a6;  /* fallback for old browsers */
-              color: -webkit-linear-gradient(to right, #ff5858, #f857a6);  /* Chrome 10-25, Safari 5.1-6 */
+             transition: 1s;
+             font-size: 1.2rem;
+              color: #f857a6;  /* fallback for old browsers */
+                color: -webkit-linear-gradient(to right, #ff5858, #f857a6);  /* Chrome 10-25, Safari 5.1-6 */
                   color: linear-gradient(to right, #ff5858, #f857a6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            }
-
-        }   
+                     }
+            }   
     }
 
+    .asidE-Nav{
+          display: inline;
 
     .asidE-Ul{
-
         border-radius: 0rem 1rem 1rem 0rem;
         background: #16222A;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
        background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         text-decoration: none;
-        margin-top: 1rem;
+        margin-top: 3rem;
         margin-left: 1rem;
         padding-right: 3rem;
         display: inline-flex;
@@ -56,16 +54,19 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
             
             list-style: none;
             padding: 0rem 0rem 0rem 0rem;
-            margin: 1rem 2rem 2rem 0rem;
+            margin: 2rem 2rem 2rem 0rem;
         }
 
         .A-Aside{
             padding-left: 1rem;
             text-decoration: none;
-            color: orange;
+            color: map-get($colores , $key:color-btn );
+            
         }
        
     }
+  }
+
     //end nav aside
     
     // start cards
@@ -77,7 +78,7 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
         cursor: pointer;
         margin-left: 1rem;
         margin-bottom: 1rem;
-        margin-top: 1rem;
+        margin-top: 8rem;
         width: 20rem;
 
         &:hover{
@@ -107,7 +108,10 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
 
 
     @media (max-width: 768px){
-
+    .videO-Pixels{
+        display: none;
+    }
+        
         
         .headeR-Pyramid{
             display: none;
@@ -116,7 +120,7 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
                 .naV-Pyrmid{
             display: none;
         }
-        .asidE-Ul{
+        .asidE-Nav{
             display: none;
         } 
 
@@ -138,7 +142,7 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
         }
 
         .dropdown{
-            margin-bottom: 2rem;
+            margin-bottom:4rem;
         }
     }
 
