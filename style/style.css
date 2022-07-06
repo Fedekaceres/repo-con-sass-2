@@ -23,6 +23,7 @@
   background: #000046; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #1CB5E0, #000046); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
 }
 
 .naV-Pyrmid {
@@ -45,30 +46,8 @@
   color: linear-gradient(to right, #ff5858, #f857a6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.asidE-Nav {
-  display: inline;
-}
-.asidE-Nav .asidE-Ul {
-  border-radius: 0rem 1rem 1rem 0rem;
-  background: #16222A; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #3A6073, #16222A); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  text-decoration: none;
-  margin-top: 3rem;
-  margin-left: 1rem;
-  padding-right: 3rem;
+.flex-center {
   display: inline-flex;
-  flex-direction: column;
-}
-.asidE-Nav .asidE-Ul .li-aside {
-  list-style: none;
-  padding: 0rem 0rem 0rem 0rem;
-  margin: 2rem 2rem 2rem 0rem;
-}
-.asidE-Nav .asidE-Ul .A-Aside {
-  padding-left: 1rem;
-  text-decoration: none;
-  color: #ffa500;
 }
 
 .card {
@@ -94,22 +73,33 @@
   color: black;
 }
 
+.img-fluid {
+  padding-left: 9rem;
+  cursor: pointer;
+}
+.img-fluid:hover {
+  width: 100rem;
+}
+
+@media (max-width: 1342px) {
+  .img-fluid {
+    padding-left: 0rem;
+  }
+}
 @media (min-width: 768px) {
   .navbar {
     display: none;
   }
 }
 @media (max-width: 768px) {
-  .videO-Pixels {
-    display: none;
+  .img-fluid {
+    padding-top: 4rem;
+    padding-left: 0rem;
   }
   .headeR-Pyramid {
     display: none;
   }
   .naV-Pyrmid {
-    display: none;
-  }
-  .asidE-Nav {
     display: none;
   }
   .navbar {
@@ -128,6 +118,11 @@
   }
   .dropdown {
     margin-bottom: 4rem;
+  }
+}
+@media (max-width: 671px) {
+  .cardS-Colum {
+    display: grid;
   }
 }
 
