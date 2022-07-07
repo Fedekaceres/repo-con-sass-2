@@ -1,11 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Iceberg&family=Smooch&display=swap");
 .headeR-Pyramid {
+  cursor: pointer;
   margin-bottom: 1rem;
+  padding-right: 35rem;
   background: #0F2027; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: flex;
   justify-content: center;
+}
+.headeR-Pyramid .dropdown {
+  padding-top: 0rem;
+  padding-right: 25rem;
 }
 .headeR-Pyramid .pyramiD-Text {
   color: white;
@@ -41,9 +47,12 @@
 .naV-Pyrmid .A-Nav-destopk:hover {
   transition: 1s;
   font-size: 1.2rem;
-  color: #f857a6; /* fallback for old browsers */
-  color: -webkit-linear-gradient(to right, #ff5858, #f857a6); /* Chrome 10-25, Safari 5.1-6 */
-  color: linear-gradient(to right, #ff5858, #f857a6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #f857a6;
+  /* fallback for old browsers */
+  color: -webkit-linear-gradient(to right, #ff5858, #f857a6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  color: linear-gradient(to right, #ff5858, #f857a6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .flex-center {
@@ -51,9 +60,12 @@
 }
 
 .card {
-  background: #acb6e5; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #86fde8, #acb6e5); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #acb6e5;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #86fde8, #acb6e5);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   cursor: pointer;
   margin-left: 1rem;
   margin-bottom: 1rem;
@@ -74,16 +86,13 @@
 }
 
 .img-fluid {
-  padding-left: 9rem;
+  padding-left: 5rem;
   cursor: pointer;
-}
-.img-fluid:hover {
-  width: 100rem;
 }
 
 @media (max-width: 1342px) {
   .img-fluid {
-    padding-left: 0rem;
+    padding-left: 0 rem;
   }
 }
 @media (min-width: 768px) {
@@ -103,15 +112,21 @@
     display: none;
   }
   .navbar {
-    background: #0F2027; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #0F2027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
   .navbar .navbar-toggler {
     border: none;
-    background: #acb6e5; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #86fde8, #acb6e5); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #acb6e5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #86fde8, #acb6e5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
   .carousel {
     margin-top: 5rem;

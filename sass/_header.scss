@@ -1,18 +1,27 @@
 //  header destokp
 @import 'mixins';
 
-.headeR-Pyramid{
-    margin-bottom: 1rem;
-    @include gradients_principal;
-        display: flex;
-         justify-content: center;
+.headeR-Pyramid {
+  cursor: pointer;
+  margin-bottom: 1rem;
+  padding-right: 35rem;
+  @include gradients_principal;
+  display: flex;
+  justify-content: center;
 
-           .pyramiD-Text{
-            color: white; 
-                   }
+  .dropdown {
+    padding-top: 0rem;
+    padding-right: 25rem;
+  }
 
-           .PyramiD-Logo{
-            height: 4rem;
-            
-            }
-    } 
+
+  .pyramiD-Text {
+    color: white;
+  }
+
+  .PyramiD-Logo {
+    height: 4rem;
+
+
+  }
+}

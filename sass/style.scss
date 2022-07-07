@@ -3,163 +3,173 @@
 @import 'mixins';
 
 @import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Smooch&display=swap');
-*{font-family: 'Iceberg', cursive;
-              }
-   
-  .fondO-Color {
-          @include gradients_fondo;
-          background-repeat: no-repeat;
-         }            
 
-    // nav y aside destokp
+* {
+    font-family: 'Iceberg', cursive;
+}
 
+.fondO-Color {
+    @include gradients_fondo;
+    background-repeat: no-repeat;
+}
 
-    .naV-Pyrmid{
-        margin: 3rem 2rem 0rem 0rem;
-        justify-content: space-between;
-        display: flex;
+// nav y aside destokp
 
 
-         .lI-Nav{
-            list-style: none;
-             }
+.naV-Pyrmid {
+    margin: 3rem 2rem 0rem 0rem;
+    justify-content: space-between;
+    display: flex;
 
-         .A-Nav-destopk{
-            color: map-get($colores, $key:color-btn);
-            text-decoration: none;
-            &:hover{
-             transition: 1s;
-             font-size: 1.2rem;
-              color: #f857a6;  /* fallback for old browsers */
-                color: -webkit-linear-gradient(to right, #ff5858, #f857a6);  /* Chrome 10-25, Safari 5.1-6 */
-                  color: linear-gradient(to right, #ff5858, #f857a6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                     }
-            }   
+
+    .lI-Nav {
+        list-style: none;
     }
 
+    .A-Nav-destopk {
+        color: map-get($colores, $key: color-btn);
+        text-decoration: none;
 
-    .flex-center{
-     display: inline-flex;
-
-
-
-       }
-
-
-    //end nav aside
-    
-    // start cards
-    .card{
-        background: #acb6e5;  /* fallback for old browsers */
-     background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-        cursor: pointer;
-        margin-left: 1rem;
-        margin-bottom: 1rem;
-        margin-top: 8rem;
-        width: 20rem;
-
-        &:hover{
+        &:hover {
             transition: 1s;
-            width: 21rem;
+            font-size: 1.2rem;
+            color: #f857a6;
+            /* fallback for old browsers */
+            color: -webkit-linear-gradient(to right, #ff5858, #f857a6);
+            /* Chrome 10-25, Safari 5.1-6 */
+            color: linear-gradient(to right, #ff5858, #f857a6);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         }
-      .card-text{
+    }
+}
+
+
+.flex-center {
+    display: inline-flex;
+
+
+}
+
+
+//end nav aside
+
+// start cards
+.card {
+    background: #acb6e5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #86fde8, #acb6e5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 8rem;
+    width: 20rem;
+
+    &:hover {
+        transition: 1s;
+        width: 21rem;
+    }
+
+    .card-text {
         padding-right: 1rem;
         margin-right: 3rem;
         color: black;
-      }
-      .card-title{
+    }
+
+    .card-title {
         color: black;
-      }
+    }
+}
+
+.img-fluid {
+    padding-left: 5rem;
+    cursor: pointer;
+}
+
+
+
+
+
+//start media 
+
+
+@media (max-width: 1342px) {
+    .img-fluid {
+        padding-left: 0
+        rem;
     }
 
-    .img-fluid{
-         padding-left: 9rem;
-         cursor: pointer;
-         &:hover{
-            width: 100rem;
-         }
-     
-       }
-  
- 
+}
 
-    //start media 
-
-
-    @media (max-width: 1342px){
-        .img-fluid{
-            padding-left: 0rem;   
-         }
-        
-    }
-   @media (min-width: 768px){
-        .navbar{
-            display: none;
-                }
-                         
-
- 
-          
-                 }      
-    
-
-
-
-
-    @media (max-width: 768px){ 
-        
-        .img-fluid{
-            padding-top: 4rem;
-            padding-left: 0rem;   
-         }
-        
-        .headeR-Pyramid{
-            display: none;
-            }
-
-         .naV-Pyrmid{
+@media (min-width: 768px) {
+    .navbar {
         display: none;
-             }
+    }
 
-        .navbar{
-            .navbar-toggler{
-                border: none;
-                background: #acb6e5;  /* fallback for old browsers */
-                background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
-                background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                
-            }
-            background: #0F2027;  /* fallback for old browsers */
-       background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .img-fluid {
+        padding-top: 4rem;
+        padding-left: 0rem;
+    }
+
+    .headeR-Pyramid {
+        display: none;
+    }
+
+    .naV-Pyrmid {
+        display: none;
+    }
+
+    .navbar {
+        .navbar-toggler {
+            border: none;
+            background: #acb6e5;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #86fde8, #acb6e5);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
         }
 
-        .carousel{
-            margin-top: 5rem;
-        }
+        background: #0F2027;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
 
-        .dropdown{
-            margin-bottom:4rem;
-        }
+    .carousel {
+        margin-top: 5rem;
+    }
 
-
- 
-               }
-
-    @media (max-width: 671px) {
-        .cardS-Colum{
-            display: grid;
-
-
-        }
-
-    }    
-     
+    .dropdown {
+        margin-bottom: 4rem;
+    }
 
 
-    
-  
-  
-    
+
+}
+
+@media (max-width: 671px) {
+    .cardS-Colum {
+        display: grid;
+
+
+    }
+
+}
