@@ -1,27 +1,38 @@
 //  header destokp
 @import 'mixins';
+@import 'maps';
 
-.headeR-Pyramid {
-  cursor: pointer;
-  margin-bottom: 1rem;
-  padding-right: 35rem;
+.naV-FlEx{
+  margin-bottom: 0rem;
+  padding-left: 3rem;
+  padding-right: 0rem;
   @include gradients_principal;
   display: flex;
-  justify-content: center;
+  
 
-  .dropdown {
-    padding-top: 0rem;
-    padding-right: 25rem;
-  }
+  
 
 
-  .pyramiD-Text {
+  .comunidaD-Pyramid-TExt{
+    padding-left: 2rem;
+    font-size: 1.4rem;
     color: white;
   }
 
   .PyramiD-Logo {
     height: 4rem;
+    margin-right: 1.2rem;
+    margin-left:0rem;
 
 
   }
+
+  .PyramiD-TExt{
+    color: white;
+    padding-right: 0rem;
+    font-size: 3rem;
+  }
+
+  
 }
+

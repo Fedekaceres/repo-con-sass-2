@@ -17,9 +17,13 @@
 
 
 .naV-Pyrmid {
-    margin: 3rem 2rem 0rem 0rem;
-    justify-content: space-between;
+    margin: 2rem 0rem 0rem 0rem;
+   justify-content: left;
     display: flex;
+    justify-content: space-around;
+    background-color: #0F2027;
+
+
 
 
     .lI-Nav {
@@ -29,16 +33,16 @@
     .A-Nav-destopk {
         color: map-get($colores, $key: color-btn);
         text-decoration: none;
+        font-size: 1.1rem;
+        margin-left: 0rem;
+        padding-left: 0rem;
 
         &:hover {
-            transition: 1s;
-            font-size: 1.2rem;
-            color: #f857a6;
-            /* fallback for old browsers */
-            color: -webkit-linear-gradient(to right, #ff5858, #f857a6);
-            /* Chrome 10-25, Safari 5.1-6 */
-            color: linear-gradient(to right, #ff5858, #f857a6);
-            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            transition: 2s;
+            background: #000046;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
         }
     }
 }
@@ -104,8 +108,43 @@
 
 }
 
+@media (max-width: 1024px) {
+    .naV-Pyrmid {
+        margin: 2rem 0rem 0rem 0rem;
+       justify-content: left;
+        display: flex;
+        justify-content: space-around;
+        background-color: #0F2027;
+    
+    
+    
+    
+        .lI-Nav {
+            list-style: none;
+        }
+    
+        .A-Nav-destopk {
+            color: map-get($colores, $key: color-btn);
+            text-decoration: none;
+            font-size: .8rem;
+            margin-left: 0rem;
+            padding-left: 0rem;
+    
+            &:hover {
+                transition: 2s;
+                background: #000046;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                
+            }
+        }
+    }
+    
+}
+
 @media (min-width: 768px) {
-    .navbar {
+
+    .naV-Mobile {
         display: none;
     }
 
@@ -125,7 +164,7 @@
         padding-left: 0rem;
     }
 
-    .headeR-Pyramid {
+    .headeR-Destokp {
         display: none;
     }
 
@@ -133,8 +172,9 @@
         display: none;
     }
 
-    .navbar {
-        .navbar-toggler {
+    .naV-Mobile{
+
+     .naV-Mobile{
             border: none;
             background: #acb6e5;
             /* fallback for old browsers */

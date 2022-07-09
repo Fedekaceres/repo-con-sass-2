@@ -1,23 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Iceberg&family=Smooch&display=swap");
-.headeR-Pyramid {
-  cursor: pointer;
-  margin-bottom: 1rem;
-  padding-right: 35rem;
-  background: #0F2027; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.naV-FlEx {
+  margin-bottom: 0rem;
+  padding-left: 3rem;
+  padding-right: 0rem;
+  background: #0F2027;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: flex;
-  justify-content: center;
 }
-.headeR-Pyramid .dropdown {
-  padding-top: 0rem;
-  padding-right: 25rem;
-}
-.headeR-Pyramid .pyramiD-Text {
+.naV-FlEx .comunidaD-Pyramid-TExt {
+  padding-left: 2rem;
+  font-size: 1.4rem;
   color: white;
 }
-.headeR-Pyramid .PyramiD-Logo {
+.naV-FlEx .PyramiD-Logo {
   height: 4rem;
+  margin-right: 1.2rem;
+  margin-left: 0rem;
+}
+.naV-FlEx .PyramiD-TExt {
+  color: white;
+  padding-right: 0rem;
+  font-size: 3rem;
 }
 
 * {
@@ -26,16 +33,21 @@
 
 .fondO-Color {
   background-repeat: repeat;
-  background: #000046; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #1CB5E0, #000046); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #000046;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1CB5E0, #000046);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-repeat: no-repeat;
 }
 
 .naV-Pyrmid {
-  margin: 3rem 2rem 0rem 0rem;
-  justify-content: space-between;
+  margin: 2rem 0rem 0rem 0rem;
+  justify-content: left;
   display: flex;
+  justify-content: space-around;
+  background-color: #0F2027;
 }
 .naV-Pyrmid .lI-Nav {
   list-style: none;
@@ -43,16 +55,15 @@
 .naV-Pyrmid .A-Nav-destopk {
   color: #ffa500;
   text-decoration: none;
+  font-size: 1.1rem;
+  margin-left: 0rem;
+  padding-left: 0rem;
 }
 .naV-Pyrmid .A-Nav-destopk:hover {
-  transition: 1s;
-  font-size: 1.2rem;
-  color: #f857a6;
-  /* fallback for old browsers */
-  color: -webkit-linear-gradient(to right, #ff5858, #f857a6);
-  /* Chrome 10-25, Safari 5.1-6 */
-  color: linear-gradient(to right, #ff5858, #f857a6);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transition: 2s;
+  background: #000046; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000046); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .flex-center {
@@ -95,8 +106,33 @@
     padding-left: 0 rem;
   }
 }
+@media (max-width: 1024px) {
+  .naV-Pyrmid {
+    margin: 2rem 0rem 0rem 0rem;
+    justify-content: left;
+    display: flex;
+    justify-content: space-around;
+    background-color: #0F2027;
+  }
+  .naV-Pyrmid .lI-Nav {
+    list-style: none;
+  }
+  .naV-Pyrmid .A-Nav-destopk {
+    color: #ffa500;
+    text-decoration: none;
+    font-size: 0.8rem;
+    margin-left: 0rem;
+    padding-left: 0rem;
+  }
+  .naV-Pyrmid .A-Nav-destopk:hover {
+    transition: 2s;
+    background: #000046; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+}
 @media (min-width: 768px) {
-  .navbar {
+  .naV-Mobile {
     display: none;
   }
 }
@@ -105,13 +141,13 @@
     padding-top: 4rem;
     padding-left: 0rem;
   }
-  .headeR-Pyramid {
+  .headeR-Destokp {
     display: none;
   }
   .naV-Pyrmid {
     display: none;
   }
-  .navbar {
+  .naV-Mobile {
     background: #0F2027;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
@@ -119,7 +155,7 @@
     background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
-  .navbar .navbar-toggler {
+  .naV-Mobile .naV-Mobile {
     border: none;
     background: #acb6e5;
     /* fallback for old browsers */
