@@ -1,215 +1,232 @@
-@import'header';
-@import 'maps';
-@import 'mixins';
+@import "header";
+@import "maps";
+@import "mixins";
+@import "pyramid-games-of-the-week";
+@import "proximoslanzamientos";
+@import "soporte";
 
-@import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Smooch&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Iceberg&family=Smooch&display=swap");
 
 * {
-    font-family: 'Iceberg', cursive;
+  font-family: "Iceberg", cursive;
 }
 
 .fondO-Color {
-    @include gradients_fondo;
-    background-repeat: no-repeat;
+  @include gradients_fondo;
+  background-repeat: repeat;
+}
+
+// todos los p
+.diV-proximO-Lanzamientos {
+  display: flex;
+  padding-top: 3rem;
+  padding-left: 3rem;
+
+  .P-proximO-Lanzamientos {
+    text-shadow: -5px 0px 14px rgba(0, 0, 0, 0.77);
+    font-size: 1.6rem;
+  }
+}
+
+.diV-tiendA {
+  display: flex;
+  padding-left: 3rem;
+  padding-top: 1rem;
+
+  .P-Tienda {
+    text-shadow: -5px 0px 14px rgba(0, 0, 0, 0.77);
+    font-size: 1.6rem;
+  }
 }
 
 // nav y aside destokp
 
-
 .naV-Pyrmid {
-    margin: 2rem 0rem 0rem 0rem;
-   justify-content: left;
-    display: flex;
-    justify-content: space-around;
-    background-color: #0F2027;
+  margin: 2rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: space-around;
 
+  .lI-Nav {
+    list-style: none;
+  }
 
+  .A-Nav-destopk {
+    text-shadow: -5px 0px 6px rgba(0, 0, 0, 1);
+    color: map-get($colores, $key: color-btn);
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-left: 0rem;
+    padding-left: 0rem;
 
-
-    .lI-Nav {
-        list-style: none;
+    &:hover {
+      border-radius: 0.2rem;
+      background: #000046;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right,
+          #1cb5e0,
+          #000046);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right,
+          #1cb5e0,
+          #000046);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
-
-    .A-Nav-destopk {
-        color: map-get($colores, $key: color-btn);
-        text-decoration: none;
-        font-size: 1.1rem;
-        margin-left: 0rem;
-        padding-left: 0rem;
-
-        &:hover {
-            transition: 2s;
-            background: #000046;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            
-        }
-    }
+  }
 }
-
-
-.flex-center {
-    display: inline-flex;
-
-
-}
-
 
 //end nav aside
 
 // start cards
-.card {
-    background: #acb6e5;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #86fde8, #acb6e5);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.cardS-Tienda {
+  @include gradients_secundario;
+  cursor: pointer;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  width: 20rem;
 
-    cursor: pointer;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-    margin-top: 8rem;
-    width: 20rem;
+  &:hover {
+    transition: 1s;
+    width: 21rem;
+  }
 
-    &:hover {
-        transition: 1s;
-        width: 21rem;
-    }
+  .card-text {
+    padding-right: 1rem;
+    margin-right: 3rem;
+    color: black;
+  }
 
-    .card-text {
-        padding-right: 1rem;
-        margin-right: 3rem;
-        color: black;
-    }
-
-    .card-title {
-        color: black;
-    }
+  .card-title {
+    color: black;
+  }
 }
 
 .img-fluid {
-    padding-left: 5rem;
-    cursor: pointer;
+  padding-left: 5rem;
+  cursor: pointer;
 }
 
+// carousel
 
+.carouseL-Main {
+  margin: auto;
+  width: 70vw;
 
+  h5 {
+    font-size: 2rem;
+    color: white;
+    text-shadow: -5px 0px 34px rgba(16, 11, 11, 1);
+  }
 
+  .carousel-control-next-icon {
+    background-color: #1cb5e0;
+    @extend.carousel-control-prev-icon;
+  }
 
-//start media 
+  .carousel-control-prev-icon {
+    border-radius: 0.3rem;
+    @extend.carousel-control-next-icon;
+  }
+}
 
+//start media
 
 @media (max-width: 1342px) {
-    .img-fluid {
-        padding-left: 0
-        rem;
-    }
-
+  .img-fluid {
+    padding-left: 0 rem;
+  }
 }
 
 @media (max-width: 1024px) {
-    .naV-Pyrmid {
-        margin: 2rem 0rem 0rem 0rem;
-       justify-content: left;
-        display: flex;
-        justify-content: space-around;
-        background-color: #0F2027;
-    
-    
-    
-    
-        .lI-Nav {
-            list-style: none;
-        }
-    
-        .A-Nav-destopk {
-            color: map-get($colores, $key: color-btn);
-            text-decoration: none;
-            font-size: .8rem;
-            margin-left: 0rem;
-            padding-left: 0rem;
-    
-            &:hover {
-                transition: 2s;
-                background: #000046;  /* fallback for old browsers */
-                background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-                background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                
-            }
-        }
+  .naV-Pyrmid {
+    margin: 2rem 0rem 0rem 0rem;
+    justify-content: left;
+    display: flex;
+    justify-content: space-around;
+    background-color: #0f2027;
+
+    .lI-Nav {
+      list-style: none;
     }
-    
+
+    .A-Nav-destopk {
+      color: map-get($colores, $key: color-btn);
+      text-decoration: none;
+      font-size: 0.8rem;
+      margin-left: 0rem;
+      padding-left: 0rem;
+
+      &:hover {
+        transition: 2s;
+        background: #000046;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right,
+            #1cb5e0,
+            #000046);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right,
+            #1cb5e0,
+            #000046);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {
-
-    .naV-Mobile {
-        display: none;
-    }
-
-
-
-
+  .naV-Mobile {
+    display: none;
+  }
 }
 
-
-
-
-
 @media (max-width: 768px) {
+  .naV-Games-of-the-week {
+    display: none;
+  }
 
-    .img-fluid {
-        padding-top: 4rem;
-        padding-left: 0rem;
+  .img-fluid {
+    padding-top: 4rem;
+    padding-left: 0rem;
+  }
+
+  .headeR-Destokp {
+    display: none;
+  }
+
+  .naV-Pyrmid {
+    display: none;
+  }
+
+  .naV-Mobile {
+    .naV-Mobile {
+      border: none;
+      background: #acb6e5;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #86fde8, #acb6e5);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
 
-    .headeR-Destokp {
-        display: none;
-    }
+    background: #0f2027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
 
-    .naV-Pyrmid {
-        display: none;
-    }
+  .carousel {
+    margin-top: 5rem;
+  }
 
-    .naV-Mobile{
-
-     .naV-Mobile{
-            border: none;
-            background: #acb6e5;
-            /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);
-            /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #86fde8, #acb6e5);
-            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-        }
-
-        background: #0F2027;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
-
-    .carousel {
-        margin-top: 5rem;
-    }
-
-    .dropdown {
-        margin-bottom: 4rem;
-    }
-
-
-
+  .dropdown {
+    margin-bottom: 4rem;
+  }
 }
 
 @media (max-width: 671px) {
-    .cardS-Colum {
-        display: grid;
-
-
-    }
-
+  .cardS-Colum {
+    display: grid;
+  }
 }

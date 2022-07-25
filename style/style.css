@@ -3,15 +3,15 @@
   margin-bottom: 0rem;
   padding-left: 3rem;
   padding-right: 0rem;
-  background: #0F2027;
+  background: #0f2027;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: flex;
 }
-.naV-FlEx .comunidaD-Pyramid-TExt {
+.naV-FlEx .comunidaD-Pyramid-TExt, .naV-FlEx .lI-Soporte .A-Soporte {
   padding-left: 2rem;
   font-size: 1.4rem;
   color: white;
@@ -26,6 +26,94 @@
   padding-right: 0rem;
   font-size: 3rem;
 }
+.naV-FlEx .lI-Soporte {
+  padding-top: 0.5rem;
+  list-style: none;
+}
+.naV-FlEx .lI-Soporte .A-Soporte {
+  text-decoration: none;
+}
+
+#hero {
+  min-height: 100vh;
+  position: relative;
+}
+#hero .text-PyramiD-Top {
+  padding-top: 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 70%;
+  position: relative;
+  z-index: 3;
+}
+#hero .Img-pyramid {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+#hero .Img-pyramid .img-fluid {
+  width: 60rem;
+  margin-bottom: 3rem;
+}
+#hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.naV-Games-of-the-week {
+  margin: 0rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: #0f2027;
+}
+.naV-Games-of-the-week .lI-Nav {
+  list-style: none;
+}
+.naV-Games-of-the-week .A-Nav-destopk {
+  color: #ffa500;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-left: 0rem;
+  padding-left: 0rem;
+}
+.naV-Games-of-the-week .A-Nav-destopk:hover {
+  transition: 2s;
+  background: #000046; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1cb5e0, #000046); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1cb5e0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.cards-proximos-lanzamientos {
+  margin-left: 2rem;
+}
+.cards-proximos-lanzamientos .imG-Proximos-cards {
+  padding: 0%;
+}
+
+.spidermaN-img {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.spidermaN-img h5 {
+  text-align: start;
+  text-shadow: 3px 1px 0px rgb(16, 11, 11);
+}
+.spidermaN-img p {
+  text-align: start;
+  font-size: 1rem;
+  text-shadow: 3px 1px 0px rgb(16, 11, 11);
+}
 
 * {
   font-family: "Iceberg", cursive;
@@ -35,24 +123,43 @@
   background-repeat: repeat;
   background: #000046;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+  background: -webkit-linear-gradient(to right, #1cb5e0, #000046);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #1CB5E0, #000046);
+  background: linear-gradient(to right, #1cb5e0, #000046);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+}
+
+.diV-proximO-Lanzamientos {
+  display: flex;
+  padding-top: 3rem;
+  padding-left: 3rem;
+}
+.diV-proximO-Lanzamientos .P-proximO-Lanzamientos {
+  text-shadow: -5px 0px 14px rgba(0, 0, 0, 0.77);
+  font-size: 1.6rem;
+}
+
+.diV-tiendA {
+  display: flex;
+  padding-left: 3rem;
+  padding-top: 1rem;
+}
+.diV-tiendA .P-Tienda {
+  text-shadow: -5px 0px 14px rgba(0, 0, 0, 0.77);
+  font-size: 1.6rem;
 }
 
 .naV-Pyrmid {
   margin: 2rem 0rem 0rem 0rem;
-  justify-content: left;
   display: flex;
   justify-content: space-around;
-  background-color: #0F2027;
 }
 .naV-Pyrmid .lI-Nav {
   list-style: none;
 }
 .naV-Pyrmid .A-Nav-destopk {
+  text-shadow: -5px 0px 6px rgb(0, 0, 0);
   color: #ffa500;
   text-decoration: none;
   font-size: 1.1rem;
@@ -60,17 +167,16 @@
   padding-left: 0rem;
 }
 .naV-Pyrmid .A-Nav-destopk:hover {
-  transition: 2s;
-  background: #000046; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #1CB5E0, #000046); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 0.2rem;
+  background: #000046;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1cb5e0, #000046);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1cb5e0, #000046);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.flex-center {
-  display: inline-flex;
-}
-
-.card {
+.cardS-Tienda {
   background: #acb6e5;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);
@@ -80,25 +186,41 @@
   cursor: pointer;
   margin-left: 1rem;
   margin-bottom: 1rem;
-  margin-top: 8rem;
+  margin-top: 1rem;
   width: 20rem;
 }
-.card:hover {
+.cardS-Tienda:hover {
   transition: 1s;
   width: 21rem;
 }
-.card .card-text {
+.cardS-Tienda .card-text {
   padding-right: 1rem;
   margin-right: 3rem;
   color: black;
 }
-.card .card-title {
+.cardS-Tienda .card-title {
   color: black;
 }
 
 .img-fluid {
   padding-left: 5rem;
   cursor: pointer;
+}
+
+.carouseL-Main {
+  margin: auto;
+  width: 70vw;
+}
+.carouseL-Main h5 {
+  font-size: 2rem;
+  color: white;
+  text-shadow: -5px 0px 34px rgb(16, 11, 11);
+}
+.carouseL-Main .carousel-control-next-icon, .carouseL-Main .carousel-control-prev-icon {
+  background-color: #1cb5e0;
+}
+.carouseL-Main .carousel-control-prev-icon, .carouseL-Main .carousel-control-next-icon {
+  border-radius: 0.3rem;
 }
 
 @media (max-width: 1342px) {
@@ -112,7 +234,7 @@
     justify-content: left;
     display: flex;
     justify-content: space-around;
-    background-color: #0F2027;
+    background-color: #0f2027;
   }
   .naV-Pyrmid .lI-Nav {
     list-style: none;
@@ -126,9 +248,12 @@
   }
   .naV-Pyrmid .A-Nav-destopk:hover {
     transition: 2s;
-    background: #000046; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1CB5E0, #000046); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #000046;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1cb5e0, #000046);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1cb5e0, #000046);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 }
 @media (min-width: 768px) {
@@ -137,6 +262,9 @@
   }
 }
 @media (max-width: 768px) {
+  .naV-Games-of-the-week {
+    display: none;
+  }
   .img-fluid {
     padding-top: 4rem;
     padding-left: 0rem;
@@ -148,11 +276,11 @@
     display: none;
   }
   .naV-Mobile {
-    background: #0F2027;
+    background: #0f2027;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
   .naV-Mobile .naV-Mobile {

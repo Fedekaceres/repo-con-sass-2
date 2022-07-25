@@ -1,19 +1,15 @@
 //  header destokp
-@import 'mixins';
-@import 'maps';
+@import "mixins";
+@import "maps";
 
-.naV-FlEx{
+.naV-FlEx {
   margin-bottom: 0rem;
   padding-left: 3rem;
   padding-right: 0rem;
   @include gradients_principal;
   display: flex;
-  
 
-  
-
-
-  .comunidaD-Pyramid-TExt{
+  .comunidaD-Pyramid-TExt {
     padding-left: 2rem;
     font-size: 1.4rem;
     color: white;
@@ -22,17 +18,21 @@
   .PyramiD-Logo {
     height: 4rem;
     margin-right: 1.2rem;
-    margin-left:0rem;
-
-
+    margin-left: 0rem;
   }
 
-  .PyramiD-TExt{
+  .PyramiD-TExt {
     color: white;
     padding-right: 0rem;
     font-size: 3rem;
   }
+  .lI-Soporte {
+    padding-top: 0.5rem;
+    list-style: none;
 
-  
+    .A-Soporte {
+      text-decoration: none;
+      @extend .comunidaD-Pyramid-TExt;
+    }
+  }
 }
-
