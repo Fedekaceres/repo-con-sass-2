@@ -7,10 +7,13 @@
 
     }
 
+ 
+
 
 }
 
-.spidermaN-img {
+.cards-destacados-img {
+
     margin-top: 3rem;
     margin-bottom: 3rem;
 
@@ -31,3 +34,44 @@
 
     }
 }
+
+
+@media (max-width: 768px){
+    .cards-proximos-lanzamientos {
+    margin-left: 0rem;
+width: 20rem;
+
+    .imG-Proximos-cards {
+        padding: 0%;
+
+
+    }
+
+
+}
+
+
+    .cards-destacados-img {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    
+        h5 {
+            text-align: start;
+            text-shadow: 3px 1px 0px rgba(16, 11, 11, 1);
+    
+    
+    
+    
+        }
+    
+        p {
+            display: none;
+            text-align: start;
+            font-size: 1rem;
+            text-shadow: 3px 1px 0px rgba(16, 11, 11, 1);
+    
+        }
+    }
+    
+}
+

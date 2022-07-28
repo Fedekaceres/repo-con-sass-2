@@ -101,20 +101,43 @@
   padding: 0%;
 }
 
-.spidermaN-img {
+.cards-destacados-img {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-.spidermaN-img h5 {
+.cards-destacados-img h5 {
   text-align: start;
   text-shadow: 3px 1px 0px rgb(16, 11, 11);
 }
-.spidermaN-img p {
+.cards-destacados-img p {
   text-align: start;
   font-size: 1rem;
   text-shadow: 3px 1px 0px rgb(16, 11, 11);
 }
 
+@media (max-width: 768px) {
+  .cards-proximos-lanzamientos {
+    margin-left: 0rem;
+    width: 20rem;
+  }
+  .cards-proximos-lanzamientos .imG-Proximos-cards {
+    padding: 0%;
+  }
+  .cards-destacados-img {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .cards-destacados-img h5 {
+    text-align: start;
+    text-shadow: 3px 1px 0px rgb(16, 11, 11);
+  }
+  .cards-destacados-img p {
+    display: none;
+    text-align: start;
+    font-size: 1rem;
+    text-shadow: 3px 1px 0px rgb(16, 11, 11);
+  }
+}
 * {
   font-family: "Iceberg", cursive;
 }
